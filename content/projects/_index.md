@@ -11,8 +11,9 @@ design:
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: Class Projects
+      text: Here are my projects in class from freshman until now. Please take a look and contact me if you think there are more possibilities for them.
+      count : 0
       filters:
         folders:
           - projects

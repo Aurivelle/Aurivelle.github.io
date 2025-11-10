@@ -1,0 +1,21 @@
+/*
+ * 這是「會發光」的邊框效果
+ * .hbx-card.project-highlight 會鎖定被標記的卡片
+*/
+.hbx-card.project-highlight {
+    /* * var(--hbx-color-primary-500) 會自動抓取
+   * 您在 params.yaml 裡設定的主題顏色 (例如 indigo)
+  */
+    border: 2px solid var(--hbx-color-primary-500);
+
+    /* 發光效果 */
+    box-shadow: 0 0 15px 4px var(--hbx-color-primary-400);
+
+    /* 讓它稍微"浮"起來，更明顯 */
+    transform: scale(1.02);
+}
+
+/* 確保圖片也符合圓角 */
+.hbx-card.project-highlight img {
+    border-radius: 0.75rem;
+}

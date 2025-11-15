@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: A Computer Science Junior
+role: CS Junior · Systems & Cryptography
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -36,7 +36,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: "b12902036@ntu.edu.tw"
+    url: "mailto:b12902036@ntu.edu.tw"
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/Aurivelle

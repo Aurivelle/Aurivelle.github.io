@@ -19,3 +19,8 @@
 .hbx-card.project-highlight img {
     border-radius: 0.75rem;
 }
+
+code::before,
+code::after {
+    content: none !important;
+}

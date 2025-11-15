@@ -37,7 +37,7 @@ sections:
       title: "About Me"
       subtitle: ""
       text: |-
-        I am a junior student studying Computer Science in National Taiwan University. I am interested in TCS and algorithms, as well as following the latest development in cryptography. I am familiar with C and Git, and have practical experience on algorithm implementation, design data structures and low-level system programming. Given my research experience and lectures, I can make knowledge practical, discuss, and improve with my team, also want to cherish every opportunity in both practical or research field.
+        I am a junior CS student at National Taiwan University. My main interests are theoretical computer science, systems programming, and cryptography, especially high-performance implementations such as NEON-optimized NTT and post-quantum schemes. I am comfortable with C/C++, Python, Git, and low-level systems programming, with hands-on experience from operating systems, advanced data structures, and cryptography courses. I enjoy turning clean theoretical ideas into efficient, verifiable code and collaborating with others on both research and engineering projects.
 
     design:
       columns: "1"

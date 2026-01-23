@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: CS Junior · Systems & Cryptography
+role: CS Junior · Cryptography
 
 # Organizations/Affiliations to display in Biography blox
 organizations:

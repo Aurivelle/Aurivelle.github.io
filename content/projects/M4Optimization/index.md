@@ -1,6 +1,6 @@
 ---
 title: 'Cryptography Engineering on Cortex-M4'
-date: '2024-01-01'
+date: '2026-01-01'
 summary: 'High-performance implementations of ML-KEM (post-quantum) and X25519 (ECDH) on ARM Cortex-M4.'
 tags:
   - ARM Cortex-M4

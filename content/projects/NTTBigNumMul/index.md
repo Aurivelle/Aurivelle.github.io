@@ -1,23 +1,28 @@
 ---
-title: 'Big Integer Multiplication in NTT'
-date: '2025-11-01' 
-summary: 'An ongoing research project aiming to find the crossover point between GMP’s flexible algorithms and our NTT  implementation on Arm A-profile CPUs. Employing engineering procedure such as unit tests and benchmarking on our implementation, also doing pipelining and optimization using hand-written assembly without compiler.'
+title: 'Multiplying Not-So-Big Integers with FFTs'
+date: '2025-07-01'
+summary: 'An ongoing research project finding the crossover point between GMP and NTT-based multiplication on large modern out-of-order ARM CPUs, with NEON-optimized kernels, OpenSSL RSA benchmarking, and formal verification.'
 tags:
+  - Research
   - Arm Neon
+  - ARM Cortex-A76
   - Assembly
   - NTT
-  - Engineering
+  - OpenSSL
+  - CryptoLine
 css_class: 'project-highlight'
 ---
 
-Multiplication on big integers is one of the most important operations in classical or post-quantum cryptography engineering. However, recent researches focus mainly on those resource-constraint microcontrollers such as ARM M-profile CPUs.
-On the other hand, although with desirable asymptotic complexity, Number-Theoretic Transform(NTT) performs surprisingly worse in practical than Karatsuba or naive quadratic complexity Schoolbook. It is important to find where do theory and practice match in reality.
-Our goal is to combine previous concepts, algorithm techniques, and NTT variants on ARM A-profile CPUs to find and help optimize multiplication above certain bounds, and lay a solid foundation for future performance improvement on these processors.
+This ongoing research project studies where NTT-based multiplication becomes practical for not-so-big integer sizes on large modern out-of-order ARM CPUs.
+
+The project compares carefully engineered NTT-based multipliers against GMP across operand sizes such as 8k-14k bits, using ARM Cortex-A76 on Raspberry Pi 5 as the main evaluation platform. The work combines algorithm design, hand-written AArch64 assembly, reproducible benchmarking, and formal verification.
 
 ### Key Features
 
-* **Parameters Selection:** Carefully choosing parameters and bound estimation for primes and polynomial length in the convenient of lazy reduction to achieve a more efficient multiplication scheme.
-* **Reductions:** Employing efficient Montgomery and Barrett reductions with clever register usage.
-* **Zero Skipping:** Despite the permutation by Good's trick, we take advantage of half 0s to do efficient vectorized operations with post-processing using twist factors.
+* **NEON-optimized NTT kernels:** Implemented NTT kernels and modular reduction routines using AArch64 assembly and ARM NEON instructions.
+* **Reduction engineering:** Used Barrett and Montgomery reduction with careful register allocation and range-bound reasoning.
+* **Reproducible benchmarking:** Built unit-testing and benchmarking harnesses to compare cycle counts against GMP across multiple operand sizes.
+* **OpenSSL integration:** Integrated an NTT-based multiplier into OpenSSL RSA and benchmarked RSA-8192/10240 operations, improving public-key operations such as verification, encryption, and KEM encapsulation.
+* **Formal verification:** Verified optimized large integer multiplication subroutines with CryptoLine and HOL Light, including algebraic correctness, range bounds, and equivalence to optimized implementations.
 
-The repo is private for now.
+To be continued...

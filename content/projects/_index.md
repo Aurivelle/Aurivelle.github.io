@@ -11,8 +11,8 @@ design:
 sections:
   - block: collection
     content:
-      title: Class Projects
-      text: Here are my projects in class from freshman until now. Please take a look and contact me if you think there are more possibilities for them.
+      title: Research & Course Projects
+      text: Selected research and course projects in cryptographic engineering, systems programming, algorithms, and machine learning.
       count : 0
       filters:
         folders:

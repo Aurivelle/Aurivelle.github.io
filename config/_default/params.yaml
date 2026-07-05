@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ""
     org_name: ""
-    description: "Personal Website of David"
+    description: "David Wu's personal academic website on cryptographic engineering, post-quantum cryptography, ARM optimization, and side-channel analysis."
     twitter: ""
   analytics:
     google_analytics: ""

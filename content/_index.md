@@ -15,7 +15,7 @@ sections:
       title: "Summary"
       username: admin
       text: |-
-        David Wu is an undergraduate researcher in Computer Science at National Taiwan University, specializing in post-quantum cryptography and high-performance arithmetic. He is focusing on NEON-optimized Number-Theoretic Transform (NTT) on ARM Cortex-A76 (Raspberry Pi 5) to accelerate big number multiplication. His recent work spans Barrett/Montgomery reduction, AArch64 assembly code generation, and reproducible benchmarking harnesses. David is a summer research intern at Academia Sinica focusing on PQC engineering, and he enjoys mentoring peers in algorithms and turning clean mathematical ideas into fast, verifiable code.
+        David Wu is a Computer Science senior at National Taiwan University focused on cryptographic engineering, post-quantum cryptography, and high-performance arithmetic. His current work includes NEON-optimized Number-Theoretic Transform (NTT) kernels on ARM Cortex-A76, OpenSSL RSA benchmarking, formal verification of optimized cryptographic routines, and machine-learning-assisted side-channel trace simulation. He enjoys turning clean mathematical ideas into fast, verifiable code.
 
       # Show a call-to-action button under your biography? (optional)
       button:
@@ -37,7 +37,7 @@ sections:
       title: "About Me"
       subtitle: ""
       text: |-
-        I am a junior CS student at National Taiwan University. My main interests are theoretical computer science, systems programming, and cryptography, especially high-performance implementations such as NEON-optimized NTT and post-quantum schemes. I am comfortable with C/C++, Python, Git, and low-level systems programming, with hands-on experience from operating systems, advanced data structures, and cryptography courses. I enjoy turning clean theoretical ideas into efficient, verifiable code and collaborating with others on both research and engineering projects.
+        I am a senior CS student at National Taiwan University. My main interests are theoretical computer science, systems programming, cryptography, and implementation security, especially high-performance cryptographic implementations such as NEON-optimized NTT, post-quantum schemes, and constant-time low-level arithmetic. I am comfortable with C/C++, Python, Git, Linux, ARM assembly, and reproducible benchmarking, with hands-on experience from operating systems, advanced data structures, cryptography, and cryptographic engineering courses. I enjoy turning clean theoretical ideas into efficient, verifiable code and collaborating with others on research and engineering projects.
 
     design:
       columns: "1"

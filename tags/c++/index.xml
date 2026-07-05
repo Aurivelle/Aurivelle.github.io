@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ | David Wu</title><link>https://aurivelle.github.io/tags/c++/</link><atom:link href="https://aurivelle.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml"/><description>C++</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://aurivelle.github.io/media/icon_hu_982c5d63a71b2961.png</url><title>C++</title><link>https://aurivelle.github.io/tags/c++/</link></image><item><title>Algorithm Analysis &amp; Data Structure Experiments</title><link>https://aurivelle.github.io/projects/advdshw/</link><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><guid>https://aurivelle.github.io/projects/advdshw/</guid><description>&lt;p&gt;This repository is a collection of in-depth academic projects for an Advanced Data Structures course, focusing on the implementation and comparative analysis of complex algorithms.&lt;/p&gt;
+&lt;h3 id="key-components"&gt;Key Components&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;BST Performance Analysis:&lt;/strong&gt; Implemented and conducted experiments on various Binary Search Trees, including Splay Trees and Tango Trees, to analyze their performance bounds. Includes a full academic report.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Streaming Algorithms Comparison:&lt;/strong&gt; Implemented and benchmarked classic streaming algorithms in C++, including Morris, Flajolet-Martin (FM), and HyperLogLog (HLL), to evaluate their accuracy in cardinality estimation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DSU Theoretical Analysis:&lt;/strong&gt; A theoretical paper analyzing a linear-time algorithm for a special case of the Disjoint Set Union (DSU) problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can view the complete source code and all academic reports from the link below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Fuzzy Counting with Probalistic Data Structures</title><link>https://aurivelle.github.io/projects/profuzzycounting/</link><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><guid>https://aurivelle.github.io/projects/profuzzycounting/</guid><description>&lt;p&gt;This is a final project of the class Advanced Data Structure aiming on probalistic data structure implementation and performance measurement in fuzzy counting.&lt;/p&gt;
+&lt;h3 id="key-features"&gt;Key Features&lt;/h3&gt;
+&lt;p&gt;Implemented two classic algorithms to estimate the cardinality of large-scale data streams.
+Features custom-built hash functions and low-level bit manipulation in C++.
+Conducted detailed experiments to compare estimation accuracy and error rates under various parameters.&lt;/p&gt;
+&lt;p&gt;You can view the complete source code and the full academic report from the links below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>X25519 | David Wu</title><link>https://aurivelle.github.io/tags/x25519/</link><atom:link href="https://aurivelle.github.io/tags/x25519/index.xml" rel="self" type="application/rss+xml"/><description>X25519</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><image><url>https://aurivelle.github.io/media/icon_hu_982c5d63a71b2961.png</url><title>X25519</title><link>https://aurivelle.github.io/tags/x25519/</link></image><item><title>Cryptography Engineering on Cortex-M4</title><link>https://aurivelle.github.io/projects/m4optimization/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://aurivelle.github.io/projects/m4optimization/</guid><description>&lt;p&gt;This project is the final project for &lt;strong&gt;Cryptography Engineering (2025 Fall)&lt;/strong&gt; at National Taiwan University, lectured by Matthias J. Kannwischer. It focuses on aggressive performance optimization of two modern cryptographic primitives on resource-constrained embedded systems.&lt;/p&gt;
+&lt;p&gt;The project implements highly optimized versions of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ML-KEM (FIPS 203)&lt;/strong&gt; — NIST&amp;rsquo;s lattice-based post-quantum key encapsulation mechanism&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;X25519 (ECDH25519)&lt;/strong&gt; — Elliptic Curve Diffie-Hellman key exchange&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Target Platform:&lt;/strong&gt; ARM Cortex-M4 microcontroller&lt;br&gt;
+&lt;strong&gt;Constraints:&lt;/strong&gt; Constant-time execution, strict code-size budgets for NTT routines&lt;/p&gt;
+&lt;h3 id="key-optimizations"&gt;Key Optimizations&lt;/h3&gt;
+&lt;h4 id="x25519-ecdh25519"&gt;X25519 (ECDH25519)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Finite Field Arithmetic (mod p = 2^255 - 19):&lt;/strong&gt; Hand-optimized assembly for &lt;code&gt;fe25519_mul&lt;/code&gt; (field multiplication) and &lt;code&gt;fe25519_sqr&lt;/code&gt; (field squaring), achieving 81-85% cycle reduction.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Constant-Time Scalar Multiplication:&lt;/strong&gt; No secret-dependent branches or table indexing to prevent timing side-channel attacks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fixed-Base Acceleration:&lt;/strong&gt; Window method with precomputed tables using constant-time selection, reducing fixed-base scalar multiplication by &lt;strong&gt;94.24%&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="ml-kem-fips-203"&gt;ML-KEM (FIPS 203)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;NTT/iNTT Kernels:&lt;/strong&gt; Optimized Number-Theoretic Transform operations with reduced memory traffic, layer fusion, and loop unrolling, achieving &lt;strong&gt;2.85-3.79× speedup&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Polynomial Arithmetic (mod q = 3329):&lt;/strong&gt; Leveraging ARMv7E-M DSP instructions (SIMD 16-bit operations) for packed polynomial addition/subtraction, &lt;strong&gt;2-2.2× faster&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code-Size Budgeting:&lt;/strong&gt; NTT routines implemented under strict per-function size constraints while maintaining performance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This project demonstrates deep understanding of low-level optimization, cryptographic algorithm engineering, and secure implementation practices on embedded ARM platforms.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

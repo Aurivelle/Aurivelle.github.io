@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concurrency | David Wu</title><link>https://aurivelle.github.io/tags/concurrency/</link><atom:link href="https://aurivelle.github.io/tags/concurrency/index.xml" rel="self" type="application/rss+xml"/><description>Concurrency</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate><image><url>https://aurivelle.github.io/media/icon_hu_982c5d63a71b2961.png</url><title>Concurrency</title><link>https://aurivelle.github.io/tags/concurrency/</link></image><item><title>C-Based Thread Pool for Matrix Multiplication</title><link>https://aurivelle.github.io/projects/matrix/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><guid>https://aurivelle.github.io/projects/matrix/</guid><description>&lt;p&gt;This project is a high-performance, general-purpose &lt;strong&gt;Thread Pool&lt;/strong&gt; built from scratch in C, designed to parallelize computationally intensive tasks.&lt;/p&gt;
+&lt;p&gt;The core of the project is the &lt;code&gt;tpool&lt;/code&gt; (thread pool) module, which manages a set of worker threads to execute tasks from a concurrent work queue.&lt;/p&gt;
+&lt;h3 id="key-features"&gt;Key Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Built From Scratch:&lt;/strong&gt; Implemented a complete thread pool library (&lt;code&gt;tpool.c&lt;/code&gt;, &lt;code&gt;tpool.h&lt;/code&gt;) using POSIX Threads (pthreads).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Complex Synchronization:&lt;/strong&gt; Utilized low-level synchronization primitives, including &lt;strong&gt;mutexes (&lt;code&gt;pthread_mutex_t&lt;/code&gt;)&lt;/strong&gt; and &lt;strong&gt;condition variables (&lt;code&gt;pthread_cond_t&lt;/code&gt;)&lt;/strong&gt;, to create a thread-safe, blocking task queue.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application &amp;amp; Benchmarking:&lt;/strong&gt; Applied the thread pool to accelerate a real-world problem—matrix multiplication—by distributing the computational load across multiple threads, verified by a custom judge (&lt;code&gt;judge.c&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can view the complete source code from the link below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

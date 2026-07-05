@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xv6 | David Wu</title><link>https://aurivelle.github.io/tags/xv6/</link><atom:link href="https://aurivelle.github.io/tags/xv6/index.xml" rel="self" type="application/rss+xml"/><description>Xv6</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate><image><url>https://aurivelle.github.io/media/icon_hu_982c5d63a71b2961.png</url><title>Xv6</title><link>https://aurivelle.github.io/tags/xv6/</link></image><item><title>Operating System Machine Problems (xv6)</title><link>https://aurivelle.github.io/projects/os_xv6/</link><pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate><guid>https://aurivelle.github.io/projects/os_xv6/</guid><description>&lt;p&gt;This project demonstrates core systems programming skills by modifying and extending the &lt;code&gt;xv6&lt;/code&gt; educational operating system (RISC-V version).&lt;/p&gt;
+&lt;p&gt;As you noted, the task was not to build an OS from scratch, but to navigate the existing kernel codebase and implement complex features in the designated files—a challenge in managing kernel-space code, memory, and concurrency.&lt;/p&gt;
+&lt;h3 id="key-features-implemented"&gt;Key Features Implemented&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MP1 (User-level Threading):&lt;/strong&gt; Implemented a complete user-space threading library (&lt;code&gt;threads.c&lt;/code&gt;), including thread creation, scheduling, and context switching.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MP2 (Kernel Memory Management):&lt;/strong&gt; Implemented a &lt;strong&gt;Slab Allocator&lt;/strong&gt; (&lt;code&gt;slab.c&lt;/code&gt;) directly within the kernel, providing an efficient memory allocation mechanism for kernel objects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MP3 (Thread Scheduling):&lt;/strong&gt; Implemented a thread scheduler (&lt;code&gt;threads_sched.c&lt;/code&gt;) to manage the execution order of user-level threads.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MP4 (File System Extension):&lt;/strong&gt; Added &lt;strong&gt;Symbolic Link (symlink)&lt;/strong&gt; functionality to the xv6 file system by modifying kernel-level file system code, submitted as a &lt;code&gt;.patch&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can view all my code contributions and modifications from the link below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

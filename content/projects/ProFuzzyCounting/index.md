@@ -1,6 +1,6 @@
 ---
 title: 'Fuzzy Counting with Probalistic Data Structures'
-date: '2025-06-01' 
+date: '2026-07-01'
 summary: 'Implementation of Probabilistic Counting with Stochastic Averaging and Flajolet-Martin algorithms for fuzzy counting in C++.'
 tags:
   - C++

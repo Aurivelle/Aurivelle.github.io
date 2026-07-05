@@ -1,6 +1,6 @@
 ---
 title: 'Multiplying Not-So-Big Integers with FFTs'
-date: '2025-07-01'
+date: '2026-07-04'
 summary: 'An ongoing research project finding the crossover point between GMP and NTT-based multiplication on large modern out-of-order ARM CPUs, with NEON-optimized kernels, OpenSSL RSA benchmarking, and formal verification.'
 tags:
   - Research
@@ -24,5 +24,3 @@ The project compares carefully engineered NTT-based multipliers against GMP acro
 * **Reproducible benchmarking:** Built unit-testing and benchmarking harnesses to compare cycle counts against GMP across multiple operand sizes.
 * **OpenSSL integration:** Integrated an NTT-based multiplier into OpenSSL RSA and benchmarked RSA-8192/10240 operations, improving public-key operations such as verification, encryption, and KEM encapsulation.
 * **Formal verification:** Verified optimized large integer multiplication subroutines with CryptoLine and HOL Light, including algebraic correctness, range bounds, and equivalence to optimized implementations.
-
-To be continued...

@@ -29,10 +29,8 @@ role: CS Senior · Cryptographic Engineering
 organizations:
   - name: National Taiwan University Computer Science and Information Engineering
     url: https://www.csie.ntu.edu.tw/
-  - name: Academia Sinica Research Center for Technology Innovation
+  - name: Academia Sinica
     url: https://www.citi.sinica.edu.tw/main
-  - name: Nanyang Technological University, EEE
-    url: https://www.ntu.edu.sg/eee
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.

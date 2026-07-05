@@ -14,6 +14,7 @@ sections:
       title: Research & Course Projects
       text: Selected research and course projects in cryptographic engineering, systems programming, algorithms, and machine learning.
       count : 0
+      order: desc
       filters:
         folders:
           - projects

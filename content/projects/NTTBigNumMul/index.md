@@ -1,7 +1,7 @@
 ---
 title: 'Multiplying Not-So-Big Integers with FFTs'
 date: '2026-07-04'
-summary: 'An ongoing research project finding the crossover point between GMP and NTT-based multiplication on large modern out-of-order ARM CPUs, with NEON-optimized kernels, OpenSSL RSA benchmarking, and formal verification.'
+summary: 'A research project finding the crossover point between GMP and NTT-based multiplication on large modern out-of-order ARM CPUs, with NEON-optimized kernels, OpenSSL RSA benchmarking, and formal verification.'
 tags:
   - Research
   - Arm Neon
@@ -13,7 +13,7 @@ tags:
 css_class: 'project-highlight'
 ---
 
-This ongoing research project studies where NTT-based multiplication becomes practical for not-so-big integer sizes on large modern out-of-order ARM CPUs.
+This research project studies where NTT-based multiplication becomes practical for not-so-big integer sizes on large modern out-of-order ARM CPUs.
 
 The project compares carefully engineered NTT-based multipliers against GMP across operand sizes such as 8k-14k bits, using ARM Cortex-A76 on Raspberry Pi 5 as the main evaluation platform. The work combines algorithm design, hand-written AArch64 assembly, reproducible benchmarking, and formal verification.
 

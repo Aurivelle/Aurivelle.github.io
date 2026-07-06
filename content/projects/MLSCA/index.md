@@ -1,7 +1,7 @@
 ---
 title: 'Generative AI for High-Fidelity Side-Channel Trace Simulation'
 date: '2026-07-03'
-summary: 'An ongoing research project on using generative AI and synthetic trace generation to augment profiling datasets and evaluate robustness in machine-learning-based side-channel analysis.'
+summary: 'A research project on using generative AI and synthetic trace generation to augment profiling datasets and evaluate robustness in machine-learning-based side-channel analysis.'
 tags:
   - Research
   - ML-SCA
@@ -12,7 +12,7 @@ tags:
 css_class: 'project-highlight'
 ---
 
-This ongoing research project is part of the **NTU Global Connect Fellowship Program** at Nanyang Technological University, supervised by Gwee Bah Hwee.
+This research project is part of the **NTU Global Connect Fellowship Program** at Nanyang Technological University, supervised by Gwee Bah Hwee.
 
 The project studies how synthetic side-channel traces can be generated and used to support profiling side-channel analysis against cryptographic implementations. The current focus is on reviewing masking, desynchronization, leakage modeling, data augmentation, and machine-learning-based attack settings.
 

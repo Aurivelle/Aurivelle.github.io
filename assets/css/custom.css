@@ -1,23 +1,40 @@
-/*
- * 這是「會發光」的邊框效果
- * .hbx-card.project-highlight 會鎖定被標記的卡片
-*/
-.hbx-card.project-highlight {
-    /* * var(--hbx-color-primary-500) 會自動抓取
-   * 您在 params.yaml 裡設定的主題顏色 (例如 indigo)
-  */
-    border: 2px solid var(--hbx-color-primary-500);
-
-    /* 發光效果 */
-    box-shadow: 0 0 15px 4px var(--hbx-color-primary-400);
-
-    /* 讓它稍微"浮"起來，更明顯 */
-    transform: scale(1.02);
+.project-feature-card,
+[role="article"]:has(a[href="/projects/nttbignummul/"]),
+[role="article"]:has(a[href="/projects/mlsca/"]) {
+    position: relative;
+    border: 1px solid rgba(94, 234, 212, 0.7) !important;
+    box-shadow:
+        0 0 0 1px rgba(96, 165, 250, 0.22),
+        0 0 28px rgba(94, 234, 212, 0.28),
+        0 18px 45px rgba(15, 23, 42, 0.16) !important;
 }
 
-/* 確保圖片也符合圓角 */
-.hbx-card.project-highlight img {
-    border-radius: 0.75rem;
+.project-feature-card::before,
+[role="article"]:has(a[href="/projects/nttbignummul/"])::before,
+[role="article"]:has(a[href="/projects/mlsca/"])::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(94, 234, 212, 0.18), transparent 38%, rgba(96, 165, 250, 0.16));
+    opacity: 0.85;
+    z-index: 1;
+}
+
+.project-feature-card > *,
+[role="article"]:has(a[href="/projects/nttbignummul/"]) > *,
+[role="article"]:has(a[href="/projects/mlsca/"]) > * {
+    position: relative;
+    z-index: 2;
+}
+
+.project-feature-card:hover,
+[role="article"]:has(a[href="/projects/nttbignummul/"]):hover,
+[role="article"]:has(a[href="/projects/mlsca/"]):hover {
+    box-shadow:
+        0 0 0 1px rgba(96, 165, 250, 0.32),
+        0 0 36px rgba(94, 234, 212, 0.42),
+        0 22px 55px rgba(15, 23, 42, 0.2) !important;
 }
 
 code::before,

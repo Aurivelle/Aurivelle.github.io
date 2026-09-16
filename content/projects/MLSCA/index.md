@@ -12,14 +12,13 @@ tags:
 css_class: 'project-highlight'
 ---
 
-This research project is part of the **NTU Global Connect Fellowship Program** at Nanyang Technological University, supervised by Gwee Bah Hwee.
+This research began through the **NTU Global Connect Fellowship Program** at Nanyang Technological University and continues as a remote collaboration, supervised by Gwee Bah Hwee and Juncheng Chen. A manuscript is in preparation.
 
-The project studies how synthetic side-channel traces can be generated and used to support profiling side-channel analysis against cryptographic implementations. The current focus is on reviewing masking, desynchronization, leakage modeling, data augmentation, and machine-learning-based attack settings.
+The project studies how attack-relevant leakage emerges during diffusion-based side-channel trace generation and whether cryptanalytic utility develops at the same rate as waveform fidelity.
 
-### Current Direction
+### Experiments and Findings
 
-* **Profiling SCA literature:** Reviewing masking, desynchronization, leakage models, and practical profiling attack setups.
-* **Synthetic trace simulation:** Studying how generated traces can augment limited profiling datasets.
-* **Robustness evaluation:** Exploring how synthetic data can help evaluate attack robustness under realistic noise and misalignment.
-
-To be continued...
+* **Controlled simulation:** Built synthetic side-channel datasets and conditional DDPM experiments spanning a 400-stage reverse diffusion process.
+* **Attack-based evaluation:** Evaluated intermediate traces with Template-attack NTGE and CPA correct-key peak and margin.
+* **Fidelity evaluation:** Tracked RMSE, NCC, DTW, Wasserstein-1, and Energy distance alongside attack-independent waveform and distribution quality.
+* **Key observation:** Found that attackability can peak before full waveform fidelity is recovered, revealing a temporal separation between cryptanalytic utility and trace fidelity.

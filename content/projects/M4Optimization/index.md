@@ -25,12 +25,13 @@ The project implements highly optimized versions of:
 #### X25519 (ECDH25519)
 * **Finite Field Arithmetic (mod p = 2^255 - 19):** Hand-optimized assembly for `fe25519_mul` (field multiplication) and `fe25519_sqr` (field squaring), achieving 81-85% cycle reduction.
 * **Constant-Time Scalar Multiplication:** No secret-dependent branches or table indexing to prevent timing side-channel attacks.
-* **Fixed-Base Acceleration:** Window method with precomputed tables using constant-time selection, reducing fixed-base scalar multiplication by **94.24%**.
+* **Fixed-Base Acceleration:** Window method with precomputed tables using constant-time selection, reducing fixed-base scalar multiplication by up to **94%** against the course baseline.
 
 #### ML-KEM (FIPS 203)
 * **NTT/iNTT Kernels:** Optimized Number-Theoretic Transform operations with reduced memory traffic, layer fusion, and loop unrolling, achieving **2.85-3.79× speedup**.
 * **Polynomial Arithmetic (mod q = 3329):** Leveraging ARMv7E-M DSP instructions (SIMD 16-bit operations) for packed polynomial addition/subtraction, **2-2.2× faster**.
 * **Code-Size Budgeting:** NTT routines implemented under strict per-function size constraints while maintaining performance.
+* **Course-Baseline Result:** Reduced the cycle count of ML-KEM `poly_ntt` by up to **62%** under the same benchmarking setup.
 
 
 This project demonstrates deep understanding of low-level optimization, cryptographic algorithm engineering, and secure implementation practices on embedded ARM platforms.

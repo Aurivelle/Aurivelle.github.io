@@ -1,12 +1,12 @@
 ---
 # Display name
-title: David Wu
+title: David Shu-Yu Wu
 
 # Name pronunciation (optional)
 name_pronunciation:
 
 # Full name (for SEO)
-first_name: David
+first_name: David Shu-Yu
 last_name: Wu
 
 # Pronouns (optional)
@@ -54,28 +54,28 @@ headings:
   education: "Education"
   interests: "Interests"
 education:
-  - area: BS Computer Science
+  - area: "B.S. in Computer Science and Information Engineering; Minor in Atmospheric Sciences"
     institution: National Taiwan University
     icon: ""
-    date_start: 2023-06-15
+    date_start: 2023-09-01
     date_end:
     summary: |
       Relevant coursework: Cryptography and Network Security, Post-Quantum Cryptography, Cryptographic Engineering, Cryptanalysis, Algorithm Design and Analysis, Advanced Data Structures, Probability, Discrete Mathematics, Automata and Formal Languages, Information Theory and Coding Techniques, Operating Systems, Computer Architecture, Machine Learning, Data Structures and Algorithms, System Programming, Linear Algebra, Computer Networks.
 
 
 work:
-  - position: Research Intern, NTU Global Connect Fellowship
+  - position: Global Connect Fellow; Remote Collaborator
     company_name: "Nanyang Technological University"
     company_url: "https://www.ntu.edu.sg/eee"
     icon: ""
     date_start: 2026-07-01
-    date_end: 2026-08-31
+    date_end: ""
     summary: |
-      Working on generative AI for high-fidelity side-channel trace simulation under the supervision of Gwee Bah Hwee.
+      Selected for the NTU Global Connect Fellowship, a competitive international summer research program with an acceptance rate below 2%; supervised by Gwee Bah Hwee and Juncheng Chen. Continued the project as a remote collaborator after the July-August 2026 fellowship.
 
-      Reviewing profiling side-channel analysis literature, including masking, desynchronization, leakage modeling, data augmentation, and synthetic trace generation for cryptographic implementations.
+      Built controlled synthetic side-channel datasets and conditional DDPM experiments to study how attack-relevant leakage emerges across the 400-stage reverse diffusion process.
 
-      Studying how synthetic side-channel traces can augment profiling datasets and evaluate attack robustness in machine-learning-based side-channel analysis.
+      Evaluated intermediate synthetic traces with Template-attack NTGE, CPA correct-key peak and margin, and waveform and distribution metrics including RMSE, NCC, DTW, Wasserstein-1, and Energy distance. Observed that attackability can peak before full waveform fidelity is recovered.
 
   - position: Research Intern, Fast Crypto Lab
     company_name: "Academia Sinica"
@@ -84,20 +84,20 @@ work:
     date_start: 2025-07-01
     date_end: ""
     summary: |
-      Working on Multiplying Not-So-Big Integers with FFTs, a project finding the crossover point between GMP and NTT-based multiplication on large modern out-of-order ARM CPUs.
+      Working on Multiplying Not-So-Big Integers with FFTs, an accepted CHES 2026 poster that studies the crossover point between GMP and NTT-based multiplication on large modern out-of-order ARM CPUs.
 
-      Implemented NEON-optimized NTT kernels and Barrett/Montgomery modular reduction in AArch64 assembly on ARM Cortex-A76, with reproducible unit tests and benchmarking harnesses.
+      Developed constant-time NEON-optimized NTT-based large-integer multiplication on AArch64, including fused NTT kernels, Barrett and Montgomery arithmetic, Good's trick, CRT reconstruction, and chunking and dechunking.
 
-      Integrated an NTT-based multiplier into OpenSSL RSA and benchmarked RSA-8192/10240 operations, improving public-key operations such as verification, encryption, and KEM encapsulation.
+      Integrated the multiplier into OpenSSL RSA-8192/10240, improving verification, encryption, and KEM encapsulation by 36.0%-44.7%.
 
-      Formally verified optimized large integer multiplication subroutines using CryptoLine and HOL Light.
+      Formally verified optimized assembly kernels with CryptoLine for algebraic correctness, range safety, and equivalence after Slothy scheduling; used HOL Light to compose higher-level multiplication specifications.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: C, C++, Python, Java
+      - name: C, C++, Python
         description: ""
         percent: 90
         icon:
@@ -106,7 +106,7 @@ skills:
         percent: 70
         icon:
       - name: Cryptography Tooling
-        description: "GMP, OpenSSL, CryptoLine"
+        description: "ARM NEON intrinsics, CryptoLine, SLOTHY"
         percent: 70
         icon:
 

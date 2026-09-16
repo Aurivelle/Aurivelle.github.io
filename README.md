@@ -1,4 +1,4 @@
-# David Wu (Aurivelle)'s Personal Website
+# David Shu-Yu Wu (Aurivelle)'s Personal Website
 
 Hello! This is the repository for my personal academic website.
 

@@ -15,7 +15,7 @@ sections:
       title: "Summary"
       username: admin
       text: |-
-        David Wu is a Computer Science senior at National Taiwan University focused on cryptographic engineering, post-quantum cryptography, and high-performance arithmetic. His current work includes NEON-optimized Number-Theoretic Transform (NTT) kernels on ARM Cortex-A76, OpenSSL RSA benchmarking, formal verification of optimized cryptographic routines, and machine-learning-assisted side-channel trace simulation. He enjoys turning clean mathematical ideas into fast, verifiable code.
+        David Shu-Yu Wu is a Computer Science senior at National Taiwan University focused on cryptographic engineering, post-quantum cryptography, and implementation security. His current research includes NEON-optimized Number-Theoretic Transform (NTT) kernels on AArch64, OpenSSL RSA integration, formal verification of optimized cryptographic routines, and generative side-channel trace simulation. He enjoys turning clean mathematical ideas into fast, verifiable code.
 
       # Show a call-to-action button under your biography? (optional)
       button:

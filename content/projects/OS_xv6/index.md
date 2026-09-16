@@ -1,7 +1,7 @@
 ---
 title: 'Operating System Machine Problems (xv6)'
 date: '2025-04-01' 
-summary: 'A series of systems programming assignments involving C programming directly within the xv6 (RISC-V) kernel, implementing core OS features like threading, memory management, and file system extensions.'
+summary: 'Operating systems projects covering user-level threads, SLAB allocation, CPU scheduling, and RAID-1 fault-tolerant file operations.'
 tags:
   - C
   - Operating Systems
@@ -10,16 +10,14 @@ tags:
   - xv6
 ---
 
-This project demonstrates core systems programming skills by modifying and extending the `xv6` educational operating system (RISC-V version).
-
-As you noted, the task was not to build an OS from scratch, but to navigate the existing kernel codebase and implement complex features in the designated files—a challenge in managing kernel-space code, memory, and concurrency.
+These projects apply systems programming concepts through xv6 extensions and supporting simulations written in C.
 
 ### Key Features Implemented
 
-* **MP1 (User-level Threading):** Implemented a complete user-space threading library (`threads.c`), including thread creation, scheduling, and context switching.
-* **MP2 (Kernel Memory Management):** Implemented a **Slab Allocator** (`slab.c`) directly within the kernel, providing an efficient memory allocation mechanism for kernel objects.
-* **MP3 (Thread Scheduling):** Implemented a thread scheduler (`threads_sched.c`) to manage the execution order of user-level threads.
-* **MP4 (File System Extension):** Added **Symbolic Link (symlink)** functionality to the xv6 file system by modifying kernel-level file system code, submitted as a `.patch` file.
+* **User-level threads:** Implemented thread creation and cooperative context switching.
+* **Kernel memory management:** Built a SLAB allocator with freelist management and partial and full slab classification.
+* **CPU scheduling:** Implemented and evaluated HRRN, P-RR, DM, and EDF-CBS schedulers.
+* **Fault-tolerant storage:** Simulated RAID-1 file operations in a Docker-based development environment.
 
 You can view all my code contributions and modifications from the link below:
 

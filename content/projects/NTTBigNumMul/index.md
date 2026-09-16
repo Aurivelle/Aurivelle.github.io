@@ -13,14 +13,14 @@ tags:
 css_class: 'project-highlight'
 ---
 
-This research project studies where NTT-based multiplication becomes practical for not-so-big integer sizes on large modern out-of-order ARM CPUs.
+This research project studies where NTT-based multiplication becomes practical for not-so-big integer sizes on large modern out-of-order ARM CPUs. The work was accepted as a poster at **CHES 2026**.
 
 The project compares carefully engineered NTT-based multipliers against GMP across operand sizes such as 8k-14k bits, using ARM Cortex-A76 on Raspberry Pi 5 as the main evaluation platform. The work combines algorithm design, hand-written AArch64 assembly, reproducible benchmarking, and formal verification.
 
 ### Key Features
 
-* **NEON-optimized NTT kernels:** Implemented NTT kernels and modular reduction routines using AArch64 assembly and ARM NEON instructions.
-* **Reduction engineering:** Used Barrett and Montgomery reduction with careful register allocation and range-bound reasoning.
+* **NEON-optimized NTT kernels:** Developed constant-time fused NTT kernels in AArch64 assembly using ARM NEON instructions.
+* **Multiplication pipeline:** Combined Barrett and Montgomery arithmetic, Good's trick, CRT reconstruction, and chunking and dechunking.
 * **Reproducible benchmarking:** Built unit-testing and benchmarking harnesses to compare cycle counts against GMP across multiple operand sizes.
-* **OpenSSL integration:** Integrated an NTT-based multiplier into OpenSSL RSA and benchmarked RSA-8192/10240 operations, improving public-key operations such as verification, encryption, and KEM encapsulation.
-* **Formal verification:** Verified optimized large integer multiplication subroutines with CryptoLine and HOL Light, including algebraic correctness, range bounds, and equivalence to optimized implementations.
+* **OpenSSL integration:** Integrated the multiplier into OpenSSL RSA-8192/10240, improving verification, encryption, and KEM encapsulation by **36.0%-44.7%**.
+* **Formal verification:** Verified optimized assembly kernels with CryptoLine for algebraic correctness, range safety, and equivalence after Slothy scheduling, then used HOL Light to compose higher-level multiplication specifications.

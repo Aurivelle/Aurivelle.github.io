@@ -73,9 +73,11 @@ work:
     summary: |
       Selected for the NTU Global Connect Fellowship, a competitive international summer research program with an acceptance rate below 2%; supervised by Gwee Bah Hwee and Juncheng Chen. Continued the project as a remote collaborator after the July-August 2026 fellowship.
 
-      Built controlled synthetic side-channel datasets and conditional DDPM experiments to study how attack-relevant leakage emerges across the 400-stage reverse diffusion process.
+      Designed three controlled synthetic settings: aligned traces, globally shifted traces, and traces with randomized physical leakage placement and byte-dependent amplitudes.
 
-      Evaluated intermediate synthetic traces with Template-attack NTGE, CPA correct-key peak and margin, and waveform and distribution metrics including RMSE, NCC, DTW, Wasserstein-1, and Energy distance. Observed that attackability can peak before full waveform fidelity is recovered.
+      Recorded predicted-clean traces across all 400 reverse diffusion stages for the aligned and shifted settings. Evaluated them with Template-attack NTGE, CPA correct-key peak and margin, and fidelity metrics including RMSE, NCC, DTW, Wasserstein-1, and Energy distance.
+
+      Observed that attack utility can emerge before full waveform and distribution fidelity is recovered. Validated the attack pipeline on the public Mind the Portability software-AES traces, where it successfully recovered the targeted key bytes.
 
   - position: Research Intern, Fast Crypto Lab
     company_name: "Academia Sinica"
@@ -88,7 +90,9 @@ work:
 
       Developed constant-time NEON-optimized NTT-based large-integer multiplication on AArch64, including fused NTT kernels, Barrett and Montgomery arithmetic, Good's trick, CRT reconstruction, and chunking and dechunking.
 
-      Integrated the multiplier into OpenSSL RSA-8192/10240, improving verification, encryption, and KEM encapsulation by 36.0%-44.7%.
+      Independently developed second-generation 5,632- and 8,448-bit multiplication paths on Cortex-A76. They outperform a target-tuned variable-time GMP baseline by 6.25% and 16.66%, respectively, placing the observed crossover at or below 5,632 bits.
+
+      Integrated NTT-based Montgomery multiplication into OpenSSL RSA. Across RSA-5120, RSA-6144, RSA-8192, and RSA-10240, end-to-end verification and encryption improve by 15.98%-51.58%.
 
       Formally verified optimized assembly kernels with CryptoLine for algebraic correctness, range safety, and equivalence after Slothy scheduling; used HOL Light to compose higher-level multiplication specifications.
 

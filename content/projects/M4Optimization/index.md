@@ -14,8 +14,8 @@ tags:
 This project is the final project for **Cryptography Engineering (2025 Fall)** at National Taiwan University, lectured by Matthias J. Kannwischer. It focuses on aggressive performance optimization of two modern cryptographic primitives on resource-constrained embedded systems.
 
 The project implements highly optimized versions of:
-- **ML-KEM (FIPS 203)** — NIST's lattice-based post-quantum key encapsulation mechanism
-- **X25519 (ECDH25519)** — Elliptic Curve Diffie-Hellman key exchange
+- **ML-KEM (FIPS 203):** NIST's lattice-based post-quantum key encapsulation mechanism
+- **X25519 (ECDH25519):** Elliptic Curve Diffie-Hellman key exchange
 
 **Target Platform:** ARM Cortex-M4 microcontroller  
 **Constraints:** Constant-time execution, strict code-size budgets for NTT routines
@@ -28,8 +28,8 @@ The project implements highly optimized versions of:
 * **Fixed-Base Acceleration:** Window method with precomputed tables using constant-time selection, reducing fixed-base scalar multiplication by up to **94%** against the course baseline.
 
 #### ML-KEM (FIPS 203)
-* **NTT/iNTT Kernels:** Optimized Number-Theoretic Transform operations with reduced memory traffic, layer fusion, and loop unrolling, achieving **2.85-3.79× speedup**.
-* **Polynomial Arithmetic (mod q = 3329):** Leveraging ARMv7E-M DSP instructions (SIMD 16-bit operations) for packed polynomial addition/subtraction, **2-2.2× faster**.
+* **NTT/iNTT Kernels:** Optimized Number-Theoretic Transform operations with reduced memory traffic, layer fusion, and loop unrolling, achieving **2.85-3.79x speedup**.
+* **Polynomial Arithmetic (mod q = 3329):** Leveraged ARMv7E-M DSP instructions (SIMD 16-bit operations) for packed polynomial addition and subtraction, achieving **2-2.2x speedup**.
 * **Code-Size Budgeting:** NTT routines implemented under strict per-function size constraints while maintaining performance.
 * **Course-Baseline Result:** Reduced the cycle count of ML-KEM `poly_ntt` by up to **62%** under the same benchmarking setup.
 

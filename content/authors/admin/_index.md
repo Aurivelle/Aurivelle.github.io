@@ -73,11 +73,11 @@ work:
     summary: |
       Selected for the NTU Global Connect Fellowship, a competitive international summer research program with an acceptance rate below 2%; supervised by Gwee Bah Hwee and Juncheng Chen. Continued the project as a remote collaborator after the July-August 2026 fellowship.
 
-      Designed three controlled synthetic settings: aligned traces, globally shifted traces, and traces with randomized physical leakage placement and byte-dependent amplitudes.
+      Developed conditional DDPM experiments on controlled synthetic traces and four measured AES datasets, evaluating predicted-clean traces across all 400 reverse-diffusion stages.
 
-      Recorded predicted-clean traces across all 400 reverse diffusion stages for the aligned and shifted settings. Evaluated them with Template-attack NTGE, CPA correct-key peak and margin, and fidelity metrics including RMSE, NCC, DTW, Wasserstein-1, and Energy distance.
+      Developed complementary evaluation pipelines using CPA-based key-recovery complexity, waveform and distribution distances, and nearest-neighbor likelihood scoring.
 
-      Observed that attack utility can emerge before full waveform and distribution fidelity is recovered. Validated the attack pipeline on the public Mind the Portability software-AES traces, where it successfully recovered the targeted key bytes.
+      Found that attack-relevant leakage can emerge substantially earlier than full distributional fidelity. On masked traces, matching first-order marginals alone was insufficient to reproduce the cross-share dependence required for second-order attacks.
 
   - position: Research Intern, Fast Crypto Lab
     company_name: "Academia Sinica"
@@ -86,7 +86,7 @@ work:
     date_start: 2025-07-01
     date_end: ""
     summary: |
-      Working on Multiplying Not-So-Big Integers with FFTs, an accepted CHES 2026 poster that studies the crossover point between GMP and NTT-based multiplication on large modern out-of-order ARM CPUs.
+      Working on Multiplying Not-So-Big Integers with FFTs: Finding and Pushing the Crossover on Large Modern OoO ARM CPUs, an accepted CHES 2026 poster.
 
       Developed constant-time NEON-optimized NTT-based large-integer multiplication on AArch64, including fused NTT kernels, Barrett and Montgomery arithmetic, Good's trick, CRT reconstruction, and chunking and dechunking.
 

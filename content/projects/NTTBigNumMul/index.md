@@ -1,6 +1,7 @@
 ---
 title: 'Multiplying Not-So-Big Integers with FFTs'
 date: '2026-07-04'
+lastmod: '2026-10-05'
 summary: 'Two generations of constant-time NTT-based large-integer multiplication for Cortex-A76, with a crossover at or below 5,632 bits, OpenSSL RSA integration, and formal verification.'
 tags:
   - Research
@@ -13,7 +14,7 @@ tags:
 css_class: 'project-highlight'
 ---
 
-This research project studies where NTT-based multiplication becomes practical for not-so-big integer sizes on large modern out-of-order ARM CPUs. The first-author manuscript is under revision, and the work was accepted for presentation at the **CHES 2026 Poster Session**.
+This research project, **Finding and Pushing the Crossover on Large Modern OoO ARM CPUs**, studies where NTT-based multiplication becomes practical for not-so-big integer sizes. The first-author manuscript is under revision, and the work was accepted for presentation at the **CHES 2026 Poster Session**.
 
 The project develops two generations of constant-time NTT-based multiplication for Cortex-A76. The second generation targets smaller operand sizes through tighter range bounds, redesigned 256/512-point NTT organization, fused reconstruction, and shorter carry and instruction-dependency chains.
 

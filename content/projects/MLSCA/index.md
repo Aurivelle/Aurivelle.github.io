@@ -1,7 +1,8 @@
 ---
 title: 'Generative AI for High-Fidelity Side-Channel Trace Simulation'
 date: '2026-07-03'
-summary: 'A diffusion-based side-channel study separating cryptanalytic utility from waveform and distribution fidelity across synthetic and public real AES traces.'
+lastmod: '2026-10-05'
+summary: 'A diffusion-based side-channel study separating cryptanalytic utility from waveform and distribution fidelity across controlled synthetic traces and four measured AES datasets.'
 tags:
   - Research
   - ML-SCA
@@ -18,9 +19,9 @@ The project studies how attack-relevant leakage emerges during diffusion-based s
 
 ### Experiments and Findings
 
-* **Controlled simulation:** Designed three increasingly difficult settings: aligned traces (V0), globally shifted traces (V1), and randomized physical leakage placement with byte-dependent amplitudes (V2).
-* **Reverse-trajectory evaluation:** Recorded predicted-clean traces at all 400 reverse diffusion stages for V0 and V1 rather than evaluating only the final sample.
-* **Attack-based evaluation:** Evaluated intermediate traces with Template-attack NTGE and CPA correct-key peak and margin.
-* **Fidelity evaluation:** Tracked RMSE, NCC, DTW, Wasserstein-1, and Energy distance alongside attack-independent waveform and distribution quality.
-* **Key observation:** Found that strong attack-exploitable leakage can emerge before full waveform and distribution fidelity is recovered.
-* **Real-trace validation:** Validated the same attack pipeline on the public Mind the Portability software-AES traces and successfully recovered the targeted key bytes.
+* **Datasets:** Developed conditional DDPM experiments on controlled synthetic traces and four measured AES datasets.
+* **Reverse-trajectory evaluation:** Evaluated predicted-clean traces across all 400 reverse-diffusion stages rather than only the final samples.
+* **Attack-based evaluation:** Measured CPA-based key-recovery complexity throughout the reverse trajectory.
+* **Fidelity evaluation:** Combined waveform and distribution distances with nearest-neighbor likelihood scoring.
+* **Key observation:** Found that attack-relevant leakage can emerge substantially earlier than full distributional fidelity.
+* **Masked traces:** Matching first-order marginals alone was insufficient to reproduce the cross-share dependence required for second-order attacks.

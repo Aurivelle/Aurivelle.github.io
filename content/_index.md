@@ -15,12 +15,12 @@ sections:
       title: "Summary"
       username: admin
       text: |-
-        David Shu-Yu Wu is a Computer Science senior at National Taiwan University focused on cryptographic engineering, post-quantum cryptography, and implementation security. His current research includes second-generation NTT-based large-integer arithmetic on AArch64, OpenSSL RSA integration, formal verification of optimized cryptographic routines, and diffusion-based side-channel trace generation across controlled synthetic traces and four measured AES datasets. He enjoys turning clean mathematical ideas into fast, verifiable code.
+        David Shu-Yu Wu is a Computer Science senior at National Taiwan University focused on cryptographic engineering, post-quantum cryptography, and implementation security. His current research includes a first-author study on second-generation NTT-based large-integer arithmetic on AArch64, OpenSSL RSA integration, formal verification of optimized cryptographic routines, and diffusion-based side-channel trace generation across controlled synthetic traces and four measured AES datasets. He enjoys turning clean mathematical ideas into fast, verifiable code.
 
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf?v=20261005
+        url: uploads/resume.pdf?v=20261007
       headings:
         about: ""
         education: ""

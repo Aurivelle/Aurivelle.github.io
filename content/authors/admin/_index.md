@@ -86,7 +86,7 @@ work:
     date_start: 2025-07-01
     date_end: ""
     summary: |
-      Working on Multiplying Not-So-Big Integers with FFTs: Finding and Pushing the Crossover on Large Modern OoO ARM CPUs, an accepted CHES 2026 poster.
+      First author of [Multiplying Not-So-Big Integers with FFTs: Finding and Pushing the Crossover on Large Modern OoO ARM CPUs](https://eprint.iacr.org/2026/2366), published as IACR ePrint 2026/2366 and accepted for the CHES 2026 Poster Session.
 
       Developed constant-time NEON-optimized NTT-based large-integer multiplication on AArch64, including fused NTT kernels, Barrett and Montgomery arithmetic, Good's trick, CRT reconstruction, and chunking and dechunking.
 
